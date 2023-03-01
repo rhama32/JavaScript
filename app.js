@@ -43,3 +43,8 @@ if(orange < apple){
 } else{
   alert('みかんの値段がりんごより高い');
 }
+
+let str3 = 'Hello';
+let str4 = 'Javascript';
+alert(str3 + str4);
+
