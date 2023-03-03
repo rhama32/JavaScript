@@ -1,6 +1,131 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+// //インクリメント
+// let num = 10;
+// num++;
+// console.log(num)
+
+// ++num;
+// console.log(num);
+
+// --num;
+// console.log(num)
+
+// //デクリメント = 1-;
+// num--;
+// console.log(num);
+
+// let num1 = 10;
+// let num2 = 10;
+// let ans1 = ++num1;
+// let ans2 = num2; ]
+
+
+// let num = 60;
+// let height = 1.7;
+// let bmi = num / (height * height);
+// console.log(bmi); ]
+
+
+// //演算子
+// let num = 20;
+// num = num + 10;
+// console.log(num);
+
+// let num1 = 20;
+// num1 += 10;
+// console.log(num1)
+
+// let num2 = 20;
+// num2 -= 10;
+// console.log(num2);
+
+// let num3 = 20;
+// num3 *= 10;
+// console.log(num3);
+
+// let num4 = 20;
+// num4 /= 10;
+// console.log(num4); ]
+
+
+// let lastName = 'たろう';
+// let firstName = 'げすと';
+// let message1 = 'こんにちは'　+ lastName + firstName;
+// console.log(message1);
+
+// let message2 = `こんにちは ${lastName} ${firstName} さん
+// JavaScriptの学習`;
+// console.log(message2); ]
+
+
+// //優先順位
+// let x = 1;
+// let y = 2;
+// let z = 3;
+
+// let ans1 = x + y * z;
+// console.log(ans1);
+
+// let ans2 = (x + y) * z;
+// console.log(ans2); ]
+
+
+// //演算子の学習
+// let ans = 1 + 2;
+// console.log(ans);
+
+// let i = 20;
+// let j = 10;
+// let ans1 = i + j;
+// console.log(ans1);
+
+// let ans2 = i - j;
+// console.log(ans2);
+
+// let ans3 = i * j;
+// console.log(ans3);
+
+// let ans4 = i / j;
+// console.log(ans4)
+
+// let x = 3;
+// let y = 2;
+// let ans5 = x / y;
+// console.log(ans5);
+
+// let ans6 = x % y; //余りを求める
+// console.log(ans6);
+
+// let ans7 = Math.pow(x,y);
+// console.log(ans7);
+
+// let ans8 = x ** y;
+// console.log(ans8);
+
+// let ans9 = x * x;
+// console.log(ans9);　]
+
+
+// let myName = 'Mike'; //文字列型＝string
+// let num = 123; //数値型 = number
+// let dec = 123.456; 
+
+// console.log(myName);
+// console.log(num);
+// console.log(dec);
+
+// console.log(typeof myName);
+// console.log(typeof num);
+// console.log(typeof dec);
+
+// myName = 456;
+// console.log(myName);
+// console.log(typeof myName);
+
+// //動的型付け言語= Javascript
+// //静的型付け言語 = C    ]
 
 
 // //変数　= 値を変更できる
@@ -26,7 +151,7 @@
 
 // const TAX_RATE = 10;
 // // _で繋ぐことスネークケース
-// console.log(TAX_RATE);
+// console.log(TAX_RATE); ]
 
 
 // console.log('Hello! I\'m Mike.Array');
@@ -34,15 +159,15 @@
 // console.log("Hello I'm Mike Array");
 // console.log('こんにちは"マイクさん"');
 // console.log('Hello'); // 同一プロジェクトでは統一
-// console.log("Hello"); // 同一プロジェクトでは統一
+// console.log("Hello"); // 同一プロジェクトでは統一 ]
 
 // console.log(12345); //数値リテラル
 // console.log(12345.6789); //浮動小数点リテラル
-// console.log('12345')　//文字列リテラル
+// console.log('12345')　//文字列リテラル ]
 
 // console.log('Hello World!!!')
 // console.log('Hello World!!!')
-// console.log('Hello World!!!')
+// console.log('Hello World!!!') ]
 
 
 //<Javascriptとは？>
