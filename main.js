@@ -1,6 +1,92 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+// let num = 12;
+// if (num % 2 === 0) {
+//   if (num % 3 === 0) {
+//     console.log(`${num}は２の倍数かつ３の倍数です。`);
+//   }
+// }
+
+// let num = 12;
+// if ((num % 2 === 0) && (num % 3 === 0)) {
+//   console.log(`${num}は２の倍数かつ３の倍数です`);
+// }
+
+
+// && 論理AND
+// console.log(true && true);
+// console.log(true && false);
+// console.log(false && false);
+// console.log(false && false);
+
+// ||　論理OR
+// console.log()
+// console.log(true || true);
+// console.log(true || false);
+// console.log(false || false);
+// console.log(false || false);
+
+// // !　論理NOT
+// console.log(!true);
+// console.log(!false);
+
+// //順位=> ! && ||
+// console.log(false && true || true);
+// console.log(false && (true || true));
+
+// let hasDriversLisense = true;
+// let hasGoldLisense = true;
+// if(hasDriversLisense && hasGoldLisense) {
+// console.log('あなたは優良ドライバーです。');
+// }
+
+
+// let weight = 60;
+// let height = 1.7;
+// let bmi = weight / (height * height);
+// console.log(bmi);
+
+// // if (bmi >=25) {
+// //   console.log('肥満');
+// // } else if (bmi >= 18.5) {
+// // console.log('普通');
+// // } else {
+// // console.log('痩せ');
+// // }
+
+// if (bmi >= 25) {
+//   console.log('肥満');
+// } else if (bmi >= 18.5) {
+//   console.log('普通');
+// } else {
+//   console.log('痩せ');
+// }
+
+
+// let num = 100; //数値型
+// let str = '100'; //文字列型
+
+// if (num == str){
+//   console.log('同じ');
+// } else{
+//   console.log('同じではない')
+// }
+
+// if (num === str){
+//   console.log('同じ');
+// } else{
+//   console.log('同じではない')
+// }
+
+// let b = true;
+// if(b){
+//   console.log('はい');
+// } else {
+//   console.log('いいえ');
+// }
+// console.log(!b);
+
 
 // let birthyear = '2000';
 // let age = '18';
