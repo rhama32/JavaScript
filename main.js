@@ -1,6 +1,49 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+
+// let num = 3;
+//   console.log(num);
+//   switch (num) {
+//   case 1:
+//     console.log('大吉');
+//   case 2:
+//     console.log('中吉');
+//   case 3:
+//     console.log('小吉');
+//   case 4:
+//     console.log('吉');
+//   case 5:
+//     console.log('凶');
+//   case 6:
+//     console.log('想定外');
+//   }
+// let num = 1;
+// switch(num) {
+//   case 1:
+//     console.log('金賞');
+//     break;
+//   case 2:
+//   console.log('銀賞');
+//   break;
+//   case 3:
+//   break;
+//   console.log('銅賞');
+// }
+
+// let num = 3;
+// if (num === 1) {
+//   console.log('金賞');
+// } else if (num === 2 ) {
+//   console.log('銀賞');
+// } else if (num === 3 ) {
+//   console.log('銅賞');
+// } else {
+//   console.log('線外');
+// }
+  
+
+
 // let num = 12;
 // if (num % 2 === 0) {
 //   if (num % 3 === 0) {
