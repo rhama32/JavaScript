@@ -1,6 +1,85 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+
+// let birthyear = '2000';
+// let age = '18';
+// console.log(birthyear + age);
+// console.log(age+birthyear)
+// console.log(Number(birthyear) + age);
+// console.log(Number('Mike'));
+// console.log(age + '歳');
+// console.log(String(age) + '歳');
+
+// //　'文字列'+ 数値　＝ '文字列'
+// //　数値 + '文字列'　＝　'文字列'
+// //　数値 + 数値　＝　数値
+// //　'文字列'+ '文字列'　= '文字列'
+
+
+
+// let x = 81;
+// if (x>=90){
+//   console.log('A');
+// } else if(x>=80) {
+//   console.log('B');
+// } else if(x>=60) {
+//   console.log('C');
+// } else {
+//   console.log('D');
+// } ]
+
+
+// //条件分岐
+// if (条件) {
+// //trueの際に実行したい処理
+// }
+
+// let temperature = 29;
+// if (temperature > 28) {
+//   console.log('冷房稼働');
+// }
+
+// console.log(29>28);
+// console.log(20>28);
+
+// //以上
+// let a = 100;
+// if (a >= 100) {
+//   console.log('100以上');
+// }
+
+// let b = 101;
+// if(b >100) {
+//   console.log('100より大きい');
+// }
+
+// let c = 100;
+// if (c <= 100){
+//   console.log('100以下');
+// }
+
+// let d = 99;
+// if (d < 100){
+//   console.log('100未満');
+// }
+
+// let e = 100 ;
+// if(e == 100 ){
+//   console.log('100と等しい')
+// }
+
+// let f = 111;
+// if (f !=100){
+//   console.log('100と等しくない');
+// }
+
+// let g = 99;
+// if(g >=100){
+//   console.log('100以上');
+// } else{
+//   console.log('100以上ではない。')
+// }
 // //インクリメント
 // let num = 10;
 // num++;
