@@ -2,6 +2,26 @@
 'use strict';
 
 
+// let age = 18;
+// let beverage = (age >= 20)? 'ビール' : 'コーラ';
+// console.log(beverage);
+// // // undifined
+// // let x ;
+// // console.log(x);
+
+// //null
+// let item = null;
+// console.log(item);
+
+// if(x === undefined) {
+//   console.log('undifinedです')
+// }
+
+// if(item === null ) {
+//   console.log('nullです');
+// }
+
+
 // let num = 3;
 //   console.log(num);
 //   switch (num) {
