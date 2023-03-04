@@ -1,6 +1,151 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+// let addButton = document.getElementById('addButton');
+// addButton.addEventListener('click', function(e){
+//   //入力欄のinput要素を取得
+//   let inputLanguage = document.getElementById('inputLanguage');
+//   //input要素から文字列を取得
+//   let language = inputLanguage.value;
+//   if(language === ''){
+//     alert('未入力です');
+//     return;
+//   }
+//   //li要素を生成
+//   let listItem = document.createElement('li');
+//   //li要素のコンテンツに入力された文字列を設定
+//   listItem.textContent = language;
+//   //ul要素を取得
+//   let languageList = document.getElementById('languageList');
+//   //リストの末尾に生成したli要素を追加
+//   languageList.appendChild(listItem);
+//   inputLanguage.value = '';
+// }, false);
+// //削除
+// let removeButton = document.getElementById('removeButton');
+// removeButton.addEventListener('click', function(e){
+// //ul要素を取得
+// let languageList = document.getElementById('languageList');
+// //リストから要素を削除
+// languageList.removeChild(languageList.lastElementChild);
+// }, false);
+
+
+//window.console.log('hello');
+//console.log('hello');
+//window.alert('hello');
+//window.confirm('OK?');
+//window.open('https://www.google.co.jp');
+//window.close();
+// let btn = document.getElementById('triggerButton');
+// btn.addEventListener('click', function(e) {
+//   window.scroll(0, 300);
+// }, false);
+
+
+// let btn = document.getElementById('triggerButton');
+// btn.addEventListener('click', function(e){
+//   // let element = document.querySelector('.foo');
+//   // console.log(element);
+//   // console.log(element.textContent);
+  
+//   let elements = document.querySelectorAll('.foo');
+//   console.log(elements);
+  
+//   for (let i = 0; i < elements.length; i++) {
+//   console.log(elements[i].textContent);
+//   }
+// }, false);
+
+
+// let btn = document.getElementById('triggerButton');
+// btn.addEventListener('click', function(e){
+//   let elements = document.getElementsByClassName('foo');
+//   console.log(elements);
+//   for(let i = 0; i < elements.length; i++) {
+//   console.log(elements[i].textContent);
+//   }
+// }, false);
+
+
+// let btn = document.getElementById('triggerButton');
+// btn.addEventListener('click', function(e){
+//   let elements = document.getElementsByName('inputText');
+//   console.log(elements);
+//   console.log(elements[0].value);
+// }, false);
+
+
+// let btn = document.getElementById('triggerButton');
+// btn.addEventListener('click', function(e){
+//   let elements = document.getElementsByTagName('p');
+//   console.log(elements);
+//   for(let i = 0; i < elements.length; i++) {
+//   console.log(elements[i].textContent);
+// }
+// }, false);
+
+
+// class属性を追加・更新(赤)
+// let setRedClassButton = document.getElementById('setRedClassButton');
+// setRedClassButton.addEventListener('click', function(e) {
+//   let showText = document.getElementById('showText');
+//   showText.setAttribute('class','red');
+// }, false);
+
+// // class属性を追加・更新(青)
+// let setBlueClassButton = document.getElementById('setBlueClassButton');
+// setBlueClassButton.addEventListener('click', function(e) {
+//   let showText = document.getElementById('showText');
+//   showText.setAttribute('class','blue');
+// }, false);
+
+// // class属性を削除
+// let removeClassButton = document.getElementById('removeClassButton');
+// removeClassButton.addEventListener('click', function(e) {
+//   let showText = document.getElementById('showText');
+//   showText.removeAttribute('class');
+// }, false);
+
+
+// let btn = document.getElementById('triggerButton');
+// btn.addEventListener('click', function(e) {
+// //IDによるノード取得
+// let inputColorName = document.getElementById('inputColorName');
+// //取得したinput要素の入力値を取得
+// let colorNameText = inputColorName.value;
+// //取得したinput要素のname属性値を取得
+// let inputName = inputColorName.getAttribute('name');
+// // idがshowTextのp要素を取得
+// let showText = document.getElementById('showText');
+// //出力
+// showText.textContent = `name属性: ${inputName}, 入力されたテキスト： ${colorNameText}`;
+// }, false);
+
+
+// let btn = document.getElementById('triggerButton');
+// btn.addEventListener('click', function(e) {
+// //IDによるノード取得
+// let headerTitle = document.getElementById('headerTitle');
+// //テキストの置換
+// headerTitle.textContent = 'タイトルが変更されました。';
+// }, false);
+
+// let btn = document.getElementById('triggerButton');
+// btn.addEventListener('click', function(e) {
+//   //alert('clicked');
+//   //IDによるノードの取得
+//   let headerTitle = document.getElementById('headerTitle');
+//   //let headerTitle = document.getElementById('hoge');
+//   console.log(headerTitle.textContent);
+// }, false);
+
+
+// DOMとは？
+// JavaScriptで記述されたプログラムから。
+// WEBページにアクセスして操作する方法。
+
+
 // let tokuten = [100,90,80,70,60];
 // let sum = 0;
 // for(let i = 0; i < tokuten.length; i++ ) {
