@@ -1,6 +1,167 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+// オブジェクトとは
+// // => 関連のあるデータと機能の集合
+// let user = new Object();
+// user.name = 'Mike Traut';
+// user.gender = 'man';
+// user.birthyear = '1990';
+// console.log(user);
+
+//オブジェクト初期化子
+let user = { name: 'Mike Traut',
+gender: 'man', birthyear: 1990};
+console.log(user);
+
+//ドット記述法
+console.log(user.name);
+console.log(user.gender);
+console.log(user.birthyear);
+
+//ブラケット記法
+console.log(user['name']);
+console.log(user['gender']);
+console.log(user['birthyear']);
+
+//個数
+console.log(Object.keys(user).length);
+
+//プロパティを取得
+let keys = Object.keys(user);
+console.log(keys);
+
+user.prefecture = 'Hyogo';
+user['prefecture'] = 'Hyogo';
+console.log(user);
+
+//値の書き換え
+user.prefecture = 'Osaka';
+user['prefecture'] = 'Osaka';
+console.log(user);
+
+// let colors = ['Red', 'Green', 'Blue'];
+// console.log(colors);
+
+// //末尾追加
+// colors.push('Black');
+// console.log(colors);
+
+// colors.unshift('white');
+// console.log(colors);
+
+// colors[1] = 'Aka';
+// console.log(colors);
+
+// let insertArr = ['a', 'b', 'c'];
+// insertArr.splice(1,0,'D');
+// console.log(insertArr);
+
+// //複数挿入
+// insertArr.splice(2,0,'X','Y','Z');
+// console.log(insertArr);
+
+// insertArr.splice(2,2);
+// console.log(insertArr);
+
+// let arr1 = ['a','b','c'];
+// let arr2 = ['d','e','f'];
+// let mergedArr = arr1.concat(arr2);
+// console.log(mergedArr);
+// console.log(arr1);
+// console.log(arr2);
+
+// // 宣言、初期化
+// let colors = ['Red', 'Green', 'Blue'];
+// console.log(colors[0]);
+// console.log(colors[1]);
+// console.log(colors[2]);
+// console.log(colors[3]); //undefined
+
+// //データ型
+// let arr = [1,'2',3,['a','b','c']];
+// console.log(arr);
+
+// //個数
+// console.log(colors.length);
+
+// //末尾の値を取得
+// console.log(colors[colors.length -1]);
+
+// //空の配列
+// let emptyArr = [];
+// console.log(emptyArr);
+
+//コールバック関数
+// => ??が完了したらXXを実行する。
+
+// const displayMessage = function() {
+//   console.log('Timeout');
+// }
+// setTimeout(displayMessage, 3000);
+
+// function greeting(name) {
+//   console.log('Hello' + name + 'san.');
+// }
+
+// function inputUserName(callback) {
+//   let name = prompt('あなたの名前を入力してください。');
+//   callback(name);
+// }
+// inputUserName(greeting);
+
+// function gokei(money, amount) {
+// return money * amount;
+// }
+// console.log(gokei(100,20));
+
+// function gokei(money, kosu){
+//   return money * kosu;
+// }
+// console.log(gokei(100,20));
+
+// //アロー関数
+// (引数,・・・) => {
+//   //実行する処理
+// }
+
+// const getRectangle = (height, width) => {
+//   return height * width;
+// };
+// console.log(getRectangle(3,5));
+
+
+// //functionコンストラクター
+// new Function('引数1','引数2','関数本体の処理');
+// //シングルコートで囲う。
+// const getRectangle
+// = new Function('height', 'width', 'return height * width');
+
+// console.log(getRectangle(3,5));
+
+
+// // //関数リテラル
+// // function(引数1,引数2) {
+// // //実行する処理;
+// // }
+
+// const getRectangle = function(height, width) {
+//   return height * width;
+// }
+// console.log(getRectangle(3,5));
+
+
+// // //function命令
+// // function 関数(引数1, 引数2) {
+// //   //任意の処理
+// //   return 戻り値;
+// // }
+
+// function getRectangle(height, width) {
+//   return height * width;
+// }
+// console.log(getRectangle(3,5));
+
 
 // let age = 18;
 // let beverage = (age >= 20)? 'ビール' : 'コーラ';
