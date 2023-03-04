@@ -1,44 +1,163 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-// オブジェクトとは
-// // => 関連のあるデータと機能の集合
-// let user = new Object();
-// user.name = 'Mike Traut';
-// user.gender = 'man';
-// user.birthyear = '1990';
+// let tokuten = [100,90,80,70,60];
+// let sum = 0;
+// for(let i = 0; i < tokuten.length; i++ ) {
+//   sum += tokuten[i];
+// }
+
+// let average = sum / tokuten.length;
+// console.log('合計値：' + sum);
+// console.log('平均値：' + average);
+
+
+// const colors = ['red','green','blue'];
+// for(const color of colors) {
+//   console.log(color);
+// }
+
+// const str = 'Javascript';
+// for(const value of str) {
+//   console.log(value);
+// }
+
+
+// let colors = ['Red', 'Green','Blue'];
+// for(let i = 0; i < colors.length; i++) {
+//   console.log(colors[i]);
+// } 
+
+// colors.forEach(function(color) {
+//   console.log(color)
+// });
+
+
+ // do while 
+// let i = 1;
+// do {
+//   console.log(i);
+//   i++;
+// } while (i<= 3);
+
+
+// let i = 1;
+// while(i <= 3) {
+//   console.log(i);
+//   i++;
+// }
+
+// let i = 1;
+// while(i <= 10) {
+//   console.log(i);
+//   if(i === 5) {
+//     break;
+//   }
+//   i++;
+// }
+ 
+// for(let i = 0; i < 3; i++) {
+//   for(let j = 0; j < 3; j++) {
+//     console.log(`i: ${i}, j: ${j}`);
+//   } 
+// }
+
+// const scores = [
+//   [100,99,98],
+//   [90,89,88],
+//   [80,79,78]
+// ];
+// // console.log(scores[0][0]);
+// // console.log(scores[0][1]);
+// // console.log(scores[0][2]);
+// // console.log(scores[1][0]);
+// // console.log(scores[1][1]);
+// // console.log(scores[1][2]);
+// // console.log(scores[2][0]);
+// // console.log(scores[2][1]);
+// // console.log(scores[2][2]);
+
+// for( let i = 0; i < scores.length; i++) {
+//   for( let j = 0; j < scores[i].length; j++) {
+//     console.log(scores[i][j]);
+//   }
+// }
+
+
+// for(初期化式：ループ継続条件式;増減式);
+  //実行処理
+// }
+// for (let i = 1; i <= 3; i++) {
+//   console.log(i);
+// }
+
+// let arr = ['a','b','c'];
+// for(let i = 0; i < 3; i++ ) {
+//   console.log(arr[i]);
+// }
+
+// for(let i = 0; i < arr.length; i++ ) {
+//   console.log(arr[i]);
+// }
+
+
+// let user = {
+//   name: 'Mike Traut',
+//   gender: 'man',
+//   birthyear: 1990,
+//   calcAge: function(thisYear) {
+//   return thisYear - this.birthyear;
+//   }
+//   }
+//   console.log(user.calcAge(2021));
+  
+// // オブジェクトとは
+// // // => 関連のあるデータと機能の集合
+// // let user = new Object();
+// // user.name = 'Mike Traut';
+// // user.gender = 'man';
+// // user.birthyear = '1990';
+// // console.log(user);
+
+// //オブジェクト初期化子
+// let user = { name: 'Mike Traut',
+// gender: 'man', birthyear: 1990};
 // console.log(user);
 
-//オブジェクト初期化子
-let user = { name: 'Mike Traut',
-gender: 'man', birthyear: 1990};
-console.log(user);
+// //ドット記述法
+// console.log(user.name);
+// console.log(user.gender);
+// console.log(user.birthyear);
 
-//ドット記述法
-console.log(user.name);
-console.log(user.gender);
-console.log(user.birthyear);
+// //ブラケット記法
+// console.log(user['name']);
+// console.log(user['gender']);
+// console.log(user['birthyear']);
 
-//ブラケット記法
-console.log(user['name']);
-console.log(user['gender']);
-console.log(user['birthyear']);
+// //個数
+// console.log(Object.keys(user).length);
 
-//個数
-console.log(Object.keys(user).length);
+// //プロパティを取得
+// let keys = Object.keys(user);
+// console.log(keys);
 
-//プロパティを取得
-let keys = Object.keys(user);
-console.log(keys);
+// user.prefecture = 'Hyogo';
+// user['prefecture'] = 'Hyogo';
+// console.log(user);
 
-user.prefecture = 'Hyogo';
-user['prefecture'] = 'Hyogo';
-console.log(user);
+// //値の書き換え
+// user.prefecture = 'Osaka';
+// user['prefecture'] = 'Osaka';
+// console.log(user);
 
-//値の書き換え
-user.prefecture = 'Osaka';
-user['prefecture'] = 'Osaka';
-console.log(user);
+// let obj1 = { a:1, b:2, c:3 }
+// let obj2 = { a:4, b:5, c:6 }
+// let mergedObj = Object.assign(obj1,obj2);
+// console.log(mergedObj);
+
+// //空のオブジェクト
+// let person = {};
+// console.log(person);
 
 // let colors = ['Red', 'Green', 'Blue'];
 // console.log(colors);
