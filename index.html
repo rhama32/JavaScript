@@ -5,15 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="img/favicon.ico" rel="icon">
-  <title>属性値の取得</title>
+  <title>登録</title>
 </head>
 <body>
-  <ul id="languageList"></ul>
-  <label for="inputLanguage">学習したいプログラミング言語</label>
-  <input type="text" id="inputLanguage" name="inputLanguage"></input>
-  <button id="addButton">追加</button>
-  <button id="removeButton">項目削除</button>
-  
+  <h2>学習したいプログラミング言語</h2>
+  <label>
+    <input type="checkbox" id="checkAll" name="checkAll" value="1">
+    全てチェック
+  </label>
+  <hr>
+    <label>
+      <input type="checkbox" name="language" value="1">
+      Python
+    </label>
+    <label>
+      <input type="checkbox" name="language" value="2">
+      JavaScript
+    </label>
+    <label>
+      <input type="checkbox" name="language" value="3">
+      Ruby
+    </label>
+    <label>
+      <input type="checkbox" name="language" value="4">
+      PHP
+    </label>
   <script src="main.js">
   </script>
 </body>

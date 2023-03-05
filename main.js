@@ -1,6 +1,56 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+//イベントハンドラ
+function handleChange() {
+  const checkAll = document.getElementById('checkAll');
+  const checkBoxes = document.getElementsByName('language');
+  for (let i= 0; i < checkBoxes.length; i++) {
+    checkBoxes[i].checked = checkAll.checked;
+  }
+}
+  const ca = document.getElementById('checkAll');
+  ca.addEventListener('change', handleChange, false);
+
+// const sayHelloButton = document.getElementById('sayHelloButton');
+// function sayHelloEventHandler(e) {
+//   console.log('Hello');
+// }
+// sayHelloButton.addEventListener('click',sayHelloEventHandler, false);
+
+// //removeの実装
+// const removeEventHandlerButton = document.getElementById('removeEventHandlerButton');
+// function removeEventHandler(e) {
+//   console.log('remove');
+//   sayHelloButton.removeEventListener('click',sayHelloEventHandler,false);
+// }
+// removeEventHandlerButton.addEventListener('click',removeEventHandler,false);
+
+
+//イベントハンドラの登録
+// const sayHelloButton = document.getElementById('sayHelloButton');
+//要素オブジェクト.addEventListener(false);
+// sayHelloButton.addEventListener('click',function(e) {
+// console.log('Hello');
+// console.log(e);
+// }, false);
+
+// sayHelloButton.addEventListener('click',function() {
+// console.log('Hello');
+// }, false);
+
+//アロー関数での書き換え
+// sayHelloButton.addEventListener('click',(e) => {
+// console.log('Hello');
+// }, false);
+
+// function sayHelloEventHandler(e) {
+//   console.log('Hello');
+//   console.log(e);
+// }
+// sayHelloButton.addEventListener('click', sayHelloEventHandler, false);
+
+
 // let addButton = document.getElementById('addButton');
 // addButton.addEventListener('click', function(e){
 //   //入力欄のinput要素を取得
