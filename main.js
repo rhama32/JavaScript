@@ -1,16 +1,57 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-//イベントハンドラ
-function handleChange() {
-  const checkAll = document.getElementById('checkAll');
-  const checkBoxes = document.getElementsByName('language');
-  for (let i= 0; i < checkBoxes.length; i++) {
-    checkBoxes[i].checked = checkAll.checked;
-  }
+let num = 0;
+
+function updateCounter(num) {
+  const counter = document.getElementById('counter');
+  counter.textContent = num;
 }
-  const ca = document.getElementById('checkAll');
-  ca.addEventListener('change', handleChange, false);
+
+function countUp() {
+  num++;
+  // const counter = document.getElementById('counter');
+  // counter.textContent = num;
+  updateCounter(num);
+}
+
+function reset() {
+  num = 0;
+  // const counter = document.getElementById('counter');
+  // counter.textContent = num;
+  updateCounter(num);
+}
+
+const countUpBtn = document.getElementById('countUpButton');
+countUpBtn.addEventListener('click',countUp, false);
+
+const resetBtn = document.getElementById('resetButton');
+resetBtn.addEventListener('click', reset, false);
+
+
+// DOMContentLoaded
+// document.addEventListener('DOMContentLoaded', function() {
+//   alert('DOMContentLoaded!');
+// }, false);
+
+// // load
+// window.onload = function() {
+//   const nowLoading = document.getElementById('nowLoading');
+//   nowLoading.style.display = 'none';
+// }
+
+
+//イベントハンドラ
+// function handleChange() {
+//   const checkAll = document.getElementById('checkAll');
+//   const checkBoxes = document.getElementsByName('language');
+//   for (let i= 0; i < checkBoxes.length; i++) {
+//     checkBoxes[i].checked = checkAll.checked;
+//   }
+// }
+//   const ca = document.getElementById('checkAll');
+//   ca.addEventListener('change', handleChange, false);
+  
 
 // const sayHelloButton = document.getElementById('sayHelloButton');
 // function sayHelloEventHandler(e) {
