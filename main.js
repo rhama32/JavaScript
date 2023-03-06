@@ -1,32 +1,66 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let num = 0;
-
-function updateCounter(num) {
-  const counter = document.getElementById('counter');
-  counter.textContent = num;
+function keyUp(e) {
+  //console.log('keyUp');
+  // console.log(inputText.value);
+  // console.log(inputText.value.length);
+  
+  //値の取得
+  let str = inputText.value;
+  str = str.replace(/\r?\n/g, '');
+  
+  //残り文字数
+  let num = 10 - str.length;
+  console.log(num);
+  
+  //表示部分の要素取得
+  const characterCount = document.getElementById('characterCount');
+  
+  //残り文字数のセット表示
+  characterCount.textContent = num;
+  
+  //p要素の取得
+  const characterCountWrap = document.getElementById('characterCountWrap');
+  
+  //文字色の設定
+  if(num >= 0) {
+    characterCountWrap.style.color = 'black';
+  } else {
+    characterCountWrap.style.color = 'red';
+  }
 }
 
-function countUp() {
-  num++;
-  // const counter = document.getElementById('counter');
-  // counter.textContent = num;
-  updateCounter(num);
-}
+const inputText = document.getElementById('inputText');
+inputText.addEventListener('keyup', keyUp, false);
 
-function reset() {
-  num = 0;
-  // const counter = document.getElementById('counter');
-  // counter.textContent = num;
-  updateCounter(num);
-}
 
-const countUpBtn = document.getElementById('countUpButton');
-countUpBtn.addEventListener('click',countUp, false);
+// let num = 0;
 
-const resetBtn = document.getElementById('resetButton');
-resetBtn.addEventListener('click', reset, false);
+// function updateCounter(num) {
+//   const counter = document.getElementById('counter');
+//   counter.textContent = num;
+// }
+
+// function countUp() {
+//   num++;
+//   // const counter = document.getElementById('counter');
+//   // counter.textContent = num;
+//   updateCounter(num);
+// }
+
+// function reset() {
+//   num = 0;
+//   // const counter = document.getElementById('counter');
+//   // counter.textContent = num;
+//   updateCounter(num);
+// }
+
+// const countUpButton = document.getElementById('countUpButton');
+// countUpButton.addEventListener('click',countUp, false);
+
+// const resetBtn = document.getElementById('resetButton');
+// resetBtn.addEventListener('click', reset, false);
 
 
 // DOMContentLoaded
