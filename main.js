@@ -1,38 +1,65 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-function keyUp(e) {
+イベントハンドラ
+function handleChange() {
+  const checkAll = document.getElementById('checkAll');
+  const checkBoxes = document.getElementsByName('language');
+  for (let i= 0; i < checkBoxes.length; i++) {
+    checkBoxes[i].checked = checkAll.checked;
+  }
+}
+  const ca = document.getElementById('checkAll');
+  ca.addEventListener('change', handleChange, false);
+  
+
+const sayHelloButton = document.getElementById('sayHelloButton');
+function sayHelloEventHandler(e) {
+  console.log('Hello');
+}
+sayHelloButton.addEventListener('click',sayHelloEventHandler, false);
+
+//removeの実装
+const removeEventHandlerButton = document.getElementById('removeEventHandlerButton');
+function removeEventHandler(e) {
+  console.log('remove');
+  sayHelloButton.removeEventListener('click',sayHelloEventHandler,false);
+}
+removeEventHandlerButton.addEventListener('click',removeEventHandler,false);
+
+
+// function keyUp(e) {
   //console.log('keyUp');
   // console.log(inputText.value);
   // console.log(inputText.value.length);
   
   //値の取得
-  let str = inputText.value;
-  str = str.replace(/\r?\n/g, '');
+//   let str = inputText.value;
+//   str = str.replace(/\r?\n/g, '');
   
-  //残り文字数
-  let num = 10 - str.length;
-  console.log(num);
+//   //残り文字数
+//   let num = 10 - str.length;
+//   console.log(num);
   
-  //表示部分の要素取得
-  const characterCount = document.getElementById('characterCount');
+//   //表示部分の要素取得
+//   const characterCount = document.getElementById('characterCount');
   
-  //残り文字数のセット表示
-  characterCount.textContent = num;
+//   //残り文字数のセット表示
+//   characterCount.textContent = num;
   
-  //p要素の取得
-  const characterCountWrap = document.getElementById('characterCountWrap');
+//   //p要素の取得
+//   const characterCountWrap = document.getElementById('characterCountWrap');
   
-  //文字色の設定
-  if(num >= 0) {
-    characterCountWrap.style.color = 'black';
-  } else {
-    characterCountWrap.style.color = 'red';
-  }
-}
+//   //文字色の設定
+//   if(num >= 0) {
+//     characterCountWrap.style.color = 'black';
+//   } else {
+//     characterCountWrap.style.color = 'red';
+//   }
+// }
 
-const inputText = document.getElementById('inputText');
-inputText.addEventListener('keyup', keyUp, false);
+// const inputText = document.getElementById('inputText');
+// inputText.addEventListener('keyup', keyUp, false);
 
 
 // let num = 0;
