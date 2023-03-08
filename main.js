@@ -1,31 +1,71 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-イベントハンドラ
-function handleChange() {
-  const checkAll = document.getElementById('checkAll');
-  const checkBoxes = document.getElementsByName('language');
-  for (let i= 0; i < checkBoxes.length; i++) {
-    checkBoxes[i].checked = checkAll.checked;
+const images = [
+  {src:'https://source.unsplash.com/C0zDWAPFT8A', description: '画像１'},
+  {src:'https://source.unsplash.com/fEK4jvgnBpg', description: '画像２'},
+  {src:'https://source.unsplash.com/egfS7HzgGcc', description: '画像３'},
+  {src:'https://source.unsplash.com/e-S23SJzDqs', description: '画像４'},
+  {src:'https://source.unsplash.com/Hnwm8ktAd5E', description: '画像５'},
+  ];
+  
+  let image = document.createElement('img');
+  image.setAttribute('src', images[0].src);
+  image.setAttribute('alt', images[0].description);
+  
+  //説明の初期値を設定
+  let description = document.createElement('p');
+  description.textContent = image.alt;
+  
+  //作成した要素の表示
+  let mainImage = document.getElementById('main_image');
+  mainImage.insertBefore(image, null);
+  mainImage.insertBefore(description, null);
+  
+  //サムネイルの表示
+  let thumbnails = document.getElementById('thumbnails');
+  for(let i = 0; i < images.length; i++) {
+    let thumbnailImage = document.createElement('img');  
+    thumbnailImage.setAttribute('src', images[i].src);
+    thumbnailImage.setAttribute('alt', images[i].description);
+    thumbnails.insertBefore(thumbnailImage, null);
   }
-}
-  const ca = document.getElementById('checkAll');
-  ca.addEventListener('change', handleChange, false);
+  
+  //クリックしたサムネイルの表示
+  thumbnails.addEventListener('click', function(e) {
+    if(e.target.src) {
+      // console.log(e.target);
+    image.src = e.target.src;
+    description.textContent = e.target.alt;
+    }
+  }, false);
+
+
+// イベントハンドラ
+// function handleChange() {
+//   const checkAll = document.getElementById('checkAll');
+//   const checkBoxes = document.getElementsByName('language');
+//   for (let i= 0; i < checkBoxes.length; i++) {
+//     checkBoxes[i].checked = checkAll.checked;
+//   }
+// }
+//   const ca = document.getElementById('checkAll');
+//   ca.addEventListener('change', handleChange, false);
   
 
-const sayHelloButton = document.getElementById('sayHelloButton');
-function sayHelloEventHandler(e) {
-  console.log('Hello');
-}
-sayHelloButton.addEventListener('click',sayHelloEventHandler, false);
+// const sayHelloButton = document.getElementById('sayHelloButton');
+// function sayHelloEventHandler(e) {
+//   console.log('Hello');
+// }
+// sayHelloButton.addEventListener('click',sayHelloEventHandler, false);
 
-//removeの実装
-const removeEventHandlerButton = document.getElementById('removeEventHandlerButton');
-function removeEventHandler(e) {
-  console.log('remove');
-  sayHelloButton.removeEventListener('click',sayHelloEventHandler,false);
-}
-removeEventHandlerButton.addEventListener('click',removeEventHandler,false);
+// //removeの実装
+// const removeEventHandlerButton = document.getElementById('removeEventHandlerButton');
+// function removeEventHandler(e) {
+//   console.log('remove');
+//   sayHelloButton.removeEventListener('click',sayHelloEventHandler,false);
+// }
+// removeEventHandlerButton.addEventListener('click',removeEventHandler,false);
 
 
 // function keyUp(e) {
