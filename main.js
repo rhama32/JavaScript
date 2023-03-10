@@ -1,44 +1,46 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-const images = [
-  {src:'https://source.unsplash.com/C0zDWAPFT8A', description: '画像１'},
-  {src:'https://source.unsplash.com/fEK4jvgnBpg', description: '画像２'},
-  {src:'https://source.unsplash.com/egfS7HzgGcc', description: '画像３'},
-  {src:'https://source.unsplash.com/e-S23SJzDqs', description: '画像４'},
-  {src:'https://source.unsplash.com/Hnwm8ktAd5E', description: '画像５'},
-  ];
+console.log('Hello');
+
+// const images = [
+//   {src:'https://source.unsplash.com/C0zDWAPFT8A', description: '画像１'},
+//   {src:'https://source.unsplash.com/fEK4jvgnBpg', description: '画像２'},
+//   {src:'https://source.unsplash.com/egfS7HzgGcc', description: '画像３'},
+//   {src:'https://source.unsplash.com/e-S23SJzDqs', description: '画像４'},
+//   {src:'https://source.unsplash.com/Hnwm8ktAd5E', description: '画像５'},
+//   ];
   
-  let image = document.createElement('img');
-  image.setAttribute('src', images[0].src);
-  image.setAttribute('alt', images[0].description);
+//   let image = document.createElement('img');
+//   image.setAttribute('src', images[0].src);
+//   image.setAttribute('alt', images[0].description);
   
-  //説明の初期値を設定
-  let description = document.createElement('p');
-  description.textContent = image.alt;
+//   //説明の初期値を設定
+//   let description = document.createElement('p');
+//   description.textContent = image.alt;
   
-  //作成した要素の表示
-  let mainImage = document.getElementById('main_image');
-  mainImage.insertBefore(image, null);
-  mainImage.insertBefore(description, null);
+//   //作成した要素の表示
+//   let mainImage = document.getElementById('main_image');
+//   mainImage.insertBefore(image, null);
+//   mainImage.insertBefore(description, null);
   
-  //サムネイルの表示
-  let thumbnails = document.getElementById('thumbnails');
-  for(let i = 0; i < images.length; i++) {
-    let thumbnailImage = document.createElement('img');  
-    thumbnailImage.setAttribute('src', images[i].src);
-    thumbnailImage.setAttribute('alt', images[i].description);
-    thumbnails.insertBefore(thumbnailImage, null);
-  }
+//   //サムネイルの表示
+//   let thumbnails = document.getElementById('thumbnails');
+//   for(let i = 0; i < images.length; i++) {
+//     let thumbnailImage = document.createElement('img');  
+//     thumbnailImage.setAttribute('src', images[i].src);
+//     thumbnailImage.setAttribute('alt', images[i].description);
+//     thumbnails.insertBefore(thumbnailImage, null);
+//   }
   
-  //クリックしたサムネイルの表示
-  thumbnails.addEventListener('click', function(e) {
-    if(e.target.src) {
-      // console.log(e.target);
-    image.src = e.target.src;
-    description.textContent = e.target.alt;
-    }
-  }, false);
+//   //クリックしたサムネイルの表示
+//   thumbnails.addEventListener('click', function(e) {
+//     if(e.target.src) {
+//       // console.log(e.target);
+//     image.src = e.target.src;
+//     description.textContent = e.target.alt;
+//     }
+//   }, false);
 
 
 // イベントハンドラ
