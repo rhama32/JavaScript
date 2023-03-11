@@ -1,7 +1,20 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-console.log('Hello');
+
+
+
+// console.log(12345); //数値リテラル
+// console.log(12345.6789);　//不動小数点リテラル
+// console.log('12345');　//文字数リテラル
+
+// console.log('Hello World');
+// console.log('Hello World');
+// console.log('Hello World');
+
+
+// console.log('Hello');
+
 
 // const images = [
 //   {src:'https://source.unsplash.com/C0zDWAPFT8A', description: '画像１'},
