@@ -1,7 +1,11 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-
+console.log('Hello I\'m Hamaoka');
+// \nで改行
+console.log('\¥\t AAA \n BBB');
+console.log("Hello I'm Hamaoka");
+console.log('こんにちは"濱岡"さん');
 
 
 // console.log(12345); //数値リテラル
