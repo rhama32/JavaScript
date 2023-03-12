@@ -1,17 +1,24 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let color = 'Red';
-console.log(color);
 
-color = 'Green';
-console.log(color);
+// let color = 'Red';
+// console.log(color);
 
-// let color = 'Blue';
+// color = 'Green';
+// console.log(color);
 
-let myColor = 'Blue';
-console.log(myColor);
+// // let color = 'Blue';
 
+// let myColor = 'Blue';
+// console.log(myColor);
+
+// //　定数
+// const PI = 3.14;
+// console.log(PI);
+
+// const TAX_RATE = 10;
+// console.log(TAX_RATE);
 
 
 // console.log('Hello I\'m Hamaoka');
