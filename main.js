@@ -1,6 +1,18 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+let myName = 'Hamaoka';
+let num = 123;
+let dec = 123.456;
+
+console.log(myName);
+console.log(num);
+console.log(dec);
+
+myName = 456;
+console.log(myName);
+console.log(typeof myName);
+
 
 // let color = 'Red';
 // console.log(color);
