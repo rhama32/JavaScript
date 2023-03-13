@@ -1,22 +1,32 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let ans = 1 + 2;
-console.log(ans);
+let x = 1;
+let y = 2;
+let z = 3;
 
-let i = 20;
-let j = 10;
-let ans1 = i + j;
+let ans1 = x + y * z;
 console.log(ans1);
 
-let ans2 = i - j;
+let ans2 = (x + y) * z;
 console.log(ans2);
 
-let ans3 = i * j;
-console.log(ans3);
+// let ans = 1 + 2;
+// console.log(ans);
 
-let ans4 = i / j;
-console.log(ans4);
+// let i = 20;
+// let j = 10;
+// let ans1 = i + j;
+// console.log(ans1);
+
+// let ans2 = i - j;
+// console.log(ans2);
+
+// let ans3 = i * j;
+// console.log(ans3);
+
+// let ans4 = i / j;
+// console.log(ans4);
 
 
 // let myName = 'Hamaoka';
