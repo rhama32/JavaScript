@@ -1,25 +1,30 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let num = 20;
-num = num + 10;
-console.log(num);
+let weight = 60;
+let height = 1.7;
+let bmi = weight / (height * height);
+console.log(bmi);
 
-let num1 = 20;
-num1 += 10;
-console.log(num1);
+// let num = 20;
+// num = num + 10;
+// console.log(num);
 
-let num2 = 20;
-num2 -= 10;
-console.log(num2);
+// let num1 = 20;
+// num1 += 10;
+// console.log(num1);
 
-let num3 = 20;
-num3 *= 10;
-console.log(num3);
+// let num2 = 20;
+// num2 -= 10;
+// console.log(num2);
 
-let num4 = 20;
-num4 /= 10;
-console.log(num4);
+// let num3 = 20;
+// num3 *= 10;
+// console.log(num3);
+
+// let num4 = 20;
+// num4 /= 10;
+// console.log(num4);
 
 // let lastName = 'は';
 // let firstName = 'ま';
