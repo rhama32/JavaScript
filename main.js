@@ -1,15 +1,45 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let x = 1;
-let y = 2;
-let z = 3;
+let num = 20;
+num = num + 10;
+console.log(num);
 
-let ans1 = x + y * z;
-console.log(ans1);
+let num1 = 20;
+num1 += 10;
+console.log(num1);
 
-let ans2 = (x + y) * z;
-console.log(ans2);
+let num2 = 20;
+num2 -= 10;
+console.log(num2);
+
+let num3 = 20;
+num3 *= 10;
+console.log(num3);
+
+let num4 = 20;
+num4 /= 10;
+console.log(num4);
+
+// let lastName = 'は';
+// let firstName = 'ま';
+// let message1 = 'こんにちは' + lastName + ' ' + firstName;
+// console.log(message1);
+
+// let message2 = `こんにちは ${lastName} ${firstName} さん
+// JavaScript`;
+// console.log(message2);
+
+
+// let x = 1;
+// let y = 2;
+// let z = 3;
+
+// let ans1 = x + y * z;
+// console.log(ans1);
+
+// let ans2 = (x + y) * z;
+// console.log(ans2);
 
 // let ans = 1 + 2;
 // console.log(ans);
