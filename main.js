@@ -1,17 +1,35 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let myName = 'Hamaoka';
-let num = 123;
-let dec = 123.456;
+let ans = 1 + 2;
+console.log(ans);
 
-console.log(myName);
-console.log(num);
-console.log(dec);
+let i = 20;
+let j = 10;
+let ans1 = i + j;
+console.log(ans1);
 
-myName = 456;
-console.log(myName);
-console.log(typeof myName);
+let ans2 = i - j;
+console.log(ans2);
+
+let ans3 = i * j;
+console.log(ans3);
+
+let ans4 = i / j;
+console.log(ans4);
+
+
+// let myName = 'Hamaoka';
+// let num = 123;
+// let dec = 123.456;
+
+// console.log(myName);
+// console.log(num);
+// console.log(dec);
+
+// myName = 456;
+// console.log(myName);
+// console.log(typeof myName);
 
 
 // let color = 'Red';
