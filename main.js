@@ -1,7 +1,7 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let weight = 60;
+let weight = 50;
 let height = 1.7;
 let bmi = weight / (height * height);
 console.log(bmi);
