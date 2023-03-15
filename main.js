@@ -1,10 +1,24 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+
 let weight = 50;
 let height = 1.7;
 let bmi = weight / (height * height);
 console.log(bmi);
+
+// let btn = document.getElementById('triggerButton');
+// btn.addEventListener('click', function(e) {
+// //IDによるノード取得
+// let headerTitle = document.getElementById('headerTitle');
+// //テキストの置換
+// headerTitle.textContent = 'タイトルが変更されました。';
+// }, false);
+
+// let weight = 50;
+// let height = 1.7;
+// let bmi = weight / (height * height);
+// console.log(bmi);
 
 // let num = 20;
 // num = num + 10;
