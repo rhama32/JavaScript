@@ -1,18 +1,56 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+let a = 100;
+if (a => 100) {
+  console.log('100以上');
+}
+
+let b = 101;
+if (b > 100) {
+  console.log('100より大きい');
+}
+
+let c = 100;
+if (c <= 100) {
+  console.log('100以下');
+}
+
+let d = 99;
+if (d < 100) {
+  console.log('100未満');
+}
+
+let e = 100;
+if (e == 100) {
+console.log('100と等しい');
+}
+
+let f = 111;
+if(f != 100) {
+  console.log('100と等しくない')
+}
+
+
+// let g = 99;
+// if ( g >= 100) {
+//   console.log('100以上');
+// } else {
+// console.log('100以上ではない')
+// }
+
 // if (条件式)　{
 //   // 条件式がtrueのとき実行したい処理。
 // }
 
-//比較演算子
-let temperature = 29;
-if (temperature > 28) {
-  console.log('冷房');
-}
+// //比較演算子
+// let temperature = 29;
+// if (temperature > 28) {
+//   console.log('冷房');
+// }
 
-console.log(29 > 28);
-console.log(20 > 28);
+// console.log(29 > 28);
+// console.log(20 > 28);
 
 // let num = 10;
 
