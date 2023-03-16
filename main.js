@@ -1,11 +1,29 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+let num = 10;
 
-let weight = 50;
-let height = 1.7;
-let bmi = weight / (height * height);
-console.log(bmi);
+//インクリメント
+num++;
+console.log(num);
+
+//デクリメント
+num--;
+console.log(num);
+
+let num1 = 10;
+let num2 = 10;
+let ans1 = ++num1;
+let ans2 = num2++;
+
+console.log(ans1);
+console.log(ans2);
+
+
+// let weight = 50;
+// let height = 1.7;
+// let bmi = weight / (height * height);
+// console.log(bmi);
 
 // let btn = document.getElementById('triggerButton');
 // btn.addEventListener('click', function(e) {
