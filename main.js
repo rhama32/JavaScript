@@ -1,23 +1,36 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let num = 10;
+// if (条件式)　{
+//   // 条件式がtrueのとき実行したい処理。
+// }
 
-//インクリメント
-num++;
-console.log(num);
+//比較演算子
+let temperature = 29;
+if (temperature > 28) {
+  console.log('冷房');
+}
 
-//デクリメント
-num--;
-console.log(num);
+console.log(29 > 28);
+console.log(20 > 28);
 
-let num1 = 10;
-let num2 = 10;
-let ans1 = ++num1;
-let ans2 = num2++;
+// let num = 10;
 
-console.log(ans1);
-console.log(ans2);
+// //インクリメント
+// num++;
+// console.log(num);
+
+// //デクリメント
+// num--;
+// console.log(num);
+
+// let num1 = 10;
+// let num2 = 10;
+// let ans1 = ++num1;
+// let ans2 = num2++;
+
+// console.log(ans1);
+// console.log(ans2);
 
 
 // let weight = 50;
