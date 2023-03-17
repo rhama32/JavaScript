@@ -1,35 +1,55 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let a = 100;
-if (a => 100) {
-  console.log('100以上');
+let x = 70;
+
+if (x >= 90) {
+  console.log('A');
+} else if ( x >= 80) {
+  console.log('B');
+} else if ( x >= 60) {
+  console.log('C');
+} else {
+  console.log('D');
 }
 
-let b = 101;
-if (b > 100) {
-  console.log('100より大きい');
-}
 
-let c = 100;
-if (c <= 100) {
-  console.log('100以下');
-}
+// if (条件式) {
+//   //
+// } else if (条件式) {
+//   //
+// } else {
+//   //
+// }
+// let a = 100;
+// if (a => 100) {
+//   console.log('100以上');
+// }
 
-let d = 99;
-if (d < 100) {
-  console.log('100未満');
-}
+// let b = 101;
+// if (b > 100) {
+//   console.log('100より大きい');
+// }
 
-let e = 100;
-if (e == 100) {
-console.log('100と等しい');
-}
+// let c = 100;
+// if (c <= 100) {
+//   console.log('100以下');
+// }
 
-let f = 111;
-if(f != 100) {
-  console.log('100と等しくない')
-}
+// let d = 99;
+// if (d < 100) {
+//   console.log('100未満');
+// }
+
+// let e = 100;
+// if (e == 100) {
+// console.log('100と等しい');
+// }
+
+// let f = 111;
+// if(f != 100) {
+//   console.log('100と等しくない')
+// }
 
 
 // let g = 99;
