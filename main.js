@@ -1,14 +1,35 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let birthYear = '2000';
-let age = 18;
+let num = 100;
+let str = '100';
 
-console.log(birthYear + age);
-console.log(age + birthYear);
-console.log(Number(birthYear) + age);
-console.log(age + '歳');
-console.log(String(age) + '歳');
+// === 厳密比較を行う
+// ==  抽象比較を行う（基本使用しない）
+
+if(num === str) {
+  console.log('同じ');
+} else {
+  console.log('同じではない');
+}
+
+let b = false;
+if (b) {
+  console.log('はい');
+} else {
+  console.log('いいえ');
+}
+
+
+// let birthYear = '2000';
+// let age = 18;
+
+// console.log(birthYear + age);
+// console.log(age + birthYear);
+// console.log(Number(birthYear) + age);
+// console.log(age + '歳');
+// console.log(String(age) + '歳');
+
 
 // let x = 70;
 
