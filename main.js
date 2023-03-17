@@ -1,24 +1,38 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let num = 100;
-let str = '100';
+let weight = 60;
+let height = 1.7;
+let bmi = weight / (height * height);
+console.log(bmi);
 
-// === 厳密比較を行う
-// ==  抽象比較を行う（基本使用しない）
-
-if(num === str) {
-  console.log('同じ');
+if(bmi >= 25) {
+ console.log('肥満');
+} else if ( bmi >= 18.5) {
+  console.log('普通');
 } else {
-  console.log('同じではない');
+  conosole.log('痩せ');
 }
 
-let b = false;
-if (b) {
-  console.log('はい');
-} else {
-  console.log('いいえ');
-}
+
+// let num = 100;
+// let str = '100';
+
+// // === 厳密比較を行う
+// // ==  抽象比較を行う（基本使用しない）
+
+// if(num === str) {
+//   console.log('同じ');
+// } else {
+//   console.log('同じではない');
+// }
+
+// let b = false;
+// if (b) {
+//   console.log('はい');
+// } else {
+//   console.log('いいえ');
+// }
 
 
 // let birthYear = '2000';
