@@ -1,17 +1,26 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let x = 70;
+let birthYear = '2000';
+let age = 18;
 
-if (x >= 90) {
-  console.log('A');
-} else if ( x >= 80) {
-  console.log('B');
-} else if ( x >= 60) {
-  console.log('C');
-} else {
-  console.log('D');
-}
+console.log(birthYear + age);
+console.log(age + birthYear);
+console.log(Number(birthYear) + age);
+console.log(age + '歳');
+console.log(String(age) + '歳');
+
+// let x = 70;
+
+// if (x >= 90) {
+//   console.log('A');
+// } else if ( x >= 80) {
+//   console.log('B');
+// } else if ( x >= 60) {
+//   console.log('C');
+// } else {
+//   console.log('D');
+// }
 
 
 // if (条件式) {
