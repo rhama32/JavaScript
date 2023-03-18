@@ -1,18 +1,30 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let weight = 60;
-let height = 1.7;
-let bmi = weight / (height * height);
-console.log(bmi);
-
-if(bmi >= 25) {
- console.log('肥満');
-} else if ( bmi >= 18.5) {
-  console.log('普通');
-} else {
-  conosole.log('痩せ');
+イベントハンドラ
+function handleChange() {
+  const checkAll = document.getElementById('checkAll');
+  const checkBoxes = document.getElementsByName('language');
+  for (let i= 0; i < checkBoxes.length; i++) {
+    checkBoxes[i].checked = checkAll.checked;
+  }
 }
+  const ca = document.getElementById('checkAll');
+  ca.addEventListener('change', handleChange, false);
+
+
+// let weight = 60;
+// let height = 1.7;
+// let bmi = weight / (height * height);
+// console.log(bmi);
+
+// if(bmi >= 25) {
+// console.log('肥満');
+// } else if ( bmi >= 18.5) {
+//   console.log('普通');
+// } else {
+//   conosole.log('痩せ');
+// }
 
 
 // let num = 100;
