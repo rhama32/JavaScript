@@ -1,16 +1,38 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-イベントハンドラ
-function handleChange() {
-  const checkAll = document.getElementById('checkAll');
-  const checkBoxes = document.getElementsByName('language');
-  for (let i= 0; i < checkBoxes.length; i++) {
-    checkBoxes[i].checked = checkAll.checked;
-  }
+console.log(true && true);
+console.log(true && false);
+console.log(false && true);
+console.log(false && false);
+
+console.log(true || true);
+console.log(true || false);
+console.log(false || true);
+console.log(false || false);
+
+console.log(!true);
+console.log(!false);
+
+console.log(false && true || true);
+
+let hasDriversLisense = false;
+let hasGoldLisense = true;
+
+if(hasDriversLisense && hasGoldLisense) {
+  console.log('優良ドライバーです')
 }
-  const ca = document.getElementById('checkAll');
-  ca.addEventListener('change', handleChange, false);
+
+// イベントハンドラ
+// function handleChange() {
+//   const checkAll = document.getElementById('checkAll');
+//   const checkBoxes = document.getElementsByName('language');
+//   for (let i= 0; i < checkBoxes.length; i++) {
+//     checkBoxes[i].checked = checkAll.checked;
+//   }
+// }
+//   const ca = document.getElementById('checkAll');
+//   ca.addEventListener('change', handleChange, false);
 
 
 // let weight = 60;
