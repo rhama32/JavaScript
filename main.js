@@ -1,27 +1,40 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-console.log(true && true);
-console.log(true && false);
-console.log(false && true);
-console.log(false && false);
-
-console.log(true || true);
-console.log(true || false);
-console.log(false || true);
-console.log(false || false);
-
-console.log(!true);
-console.log(!false);
-
-console.log(false && true || true);
-
-let hasDriversLisense = false;
-let hasGoldLisense = true;
-
-if(hasDriversLisense && hasGoldLisense) {
-  console.log('優良ドライバーです')
+let num = 11;
+if(num % 2 === 0) {
+  if(num % 3 === 0) {
+    console.log('${num}は２の倍数かつ３の倍数です')
+  }
 }
+
+let num = 6;
+if((num % 2 === 0) && (num % 3 === 0)){
+  console.log('${num}は２の倍数かつ３の倍数です')
+}
+
+// console.log(true && true);
+// console.log(true && false);
+// console.log(false && true);
+// console.log(false && false);
+
+// console.log(true || true);
+// console.log(true || false);
+// console.log(false || true);
+// console.log(false || false);
+
+// console.log(!true);
+// console.log(!false);
+
+// console.log(false && true || true);
+
+// let hasDriversLisense = false;
+// let hasGoldLisense = true;
+
+// if(hasDriversLisense && hasGoldLisense) {
+//   console.log('優良ドライバーです')
+// }
+
 
 // イベントハンドラ
 // function handleChange() {
