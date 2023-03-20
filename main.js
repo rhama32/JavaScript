@@ -1,18 +1,24 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-(引数, ...) => {
-  //処理
-}
+const getSum = function(kakaku,kosu) {
+return kakaku * kosu;
+} 
+console.log(getSum(100,20));
 
-const getRectangle = function(height,width) {
-  return height * width;
-}
+// (引数, ...) => {
+//   //処理
+// }
 
-const getRectangle = (height, width) => {
-  return height * width;
-};
-console.log(getRectangle(3,5));
+// const getRectangle = function(height,width) {
+//   return height * width;
+// }
+
+// const getRectangle = (height, width) => {
+//   return height * width;
+// };
+// console.log(getRectangle(3,5));
+
 
 // // new Function(引数1,引数2,関数本体の処理);
 // const getRectangle = new Function('height', 'width', 'return height * width');
