@@ -1,20 +1,25 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-引数：let height = 3;
-引数：let yoko = 5;
-let sikaku = height * yoko;
-console.log(sikaku);
-
-// function 関数(引数1,引数2・・・) {
-//   //任意
-// 　return 戻り値;
-// }
-
-function getrectangle(height, width) {
+const getRectangle = function(height, width) {
   return height * width;
 }
-console.log(getrectangle(3,5));
+console.log(getRectangle(3,5));
+
+// 引数：let height = 3;
+// 引数：let yoko = 5;
+// let sikaku = height * yoko;
+// console.log(sikaku);
+
+// // function 関数(引数1,引数2・・・) {
+// //   //任意
+// // 　return 戻り値;
+// // }
+
+// function getrectangle(height, width) {
+//   return height * width;
+// }
+// console.log(getrectangle(3,5));
 
 
 // let age = 25;
