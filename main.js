@@ -1,10 +1,27 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-const getSum = function(kakaku,kosu) {
-return kakaku * kosu;
-} 
-console.log(getSum(100,20));
+function greeting(name) {
+  console.log('Hello' + name + 'さん');
+}
+
+function inputUserName(callback) {
+  let name = prompt('あなたの名前を入力してください');
+  callback(name);
+}
+
+inputUserName(greeting);
+
+
+// const displayMessage = function() {
+//   console.log('Timeout');
+// }
+// setTimeout(displayMessage, 3000);
+
+// const getSum = function(kakaku,kosu) {
+// return kakaku * kosu;
+// } 
+// console.log(getSum(100,20));
 
 // (引数, ...) => {
 //   //処理
