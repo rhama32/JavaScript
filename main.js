@@ -1,6 +1,7 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+
 let colors = ['Red','Green','Blue'];
 console.log(colors);
 console.log(colors[0]);
@@ -13,8 +14,8 @@ console.log(arr)
 console.log(colors.length);
 console.log(colors[colors.length -1]);
 
-let emptyArr = [];
-console.log(emptyArr);
+// let emptyArr = [];
+// console.log(emptyArr);
 
 // function greeting(name) {
 //   console.log('Hello' + name + 'さん');
