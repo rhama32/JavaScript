@@ -1,18 +1,27 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+function getrectangle(height, width) {
+  return height * width;
+}
+console.log(getrectangle(3,5));
 
-let colors = ['Red','Green','Blue'];
-console.log(colors);
-console.log(colors[0]);
-console.log(colors[1]);
-console.log(colors[2]);
-console.log(colors[3]);
 
-let arr = [1,'2',3,['a','b','c']];
-console.log(arr)
-console.log(colors.length);
-console.log(colors[colors.length -1]);
+let age = 25;
+let beverage = (age >= 20)? 'ビール' : 'コーラ';
+console.log(beverage);
+
+// let colors = ['Red','Green','Blue'];
+// console.log(colors);
+// console.log(colors[0]);
+// console.log(colors[1]);
+// console.log(colors[2]);
+// console.log(colors[3]);
+
+// let arr = [1,'2',3,['a','b','c']];
+// console.log(arr)
+// console.log(colors.length);
+// console.log(colors[colors.length -1]);
 
 // let emptyArr = [];
 // console.log(emptyArr);
