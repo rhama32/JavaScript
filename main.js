@@ -1,15 +1,37 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-function getrectangle(height, width) {
-  return height * width;
+const scores = [
+  [100,99,98],
+  [90,89,88],
+  [80,79,78]
+];
+
+console.log(scores[0][0]);
+console.log(scores[0][1]);
+console.log(scores[0][2]);
+console.log(scores[1][0]);
+console.log(scores[1][1]);
+console.log(scores[1][2]);
+console.log(scores[2][0]);
+console.log(scores[2][1]);
+console.log(scores[2][2]);
+
+for( let i = 0; i < scores.length; i++) {
+  for( let j = 0; j < scores[i].length; j++) {
+    console.log(scores[i][j]);
+  }
 }
-console.log(getrectangle(3,5));
+
+// function getrectangle(height, width) {
+//   return height * width;
+// }
+// console.log(getrectangle(3,5));
 
 
-let age = 25;
-let beverage = (age >= 20)? 'ビール' : 'コーラ';
-console.log(beverage);
+// let age = 25;
+// let beverage = (age >= 20)? 'ビール' : 'コーラ';
+// console.log(beverage);
 
 // let colors = ['Red','Green','Blue'];
 // console.log(colors);
