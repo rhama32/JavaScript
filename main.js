@@ -1,27 +1,58 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-const scores = [
-  [100,99,98],
-  [90,89,88],
-  [80,79,78]
-];
-
-console.log(scores[0][0]);
-console.log(scores[0][1]);
-console.log(scores[0][2]);
-console.log(scores[1][0]);
-console.log(scores[1][1]);
-console.log(scores[1][2]);
-console.log(scores[2][0]);
-console.log(scores[2][1]);
-console.log(scores[2][2]);
-
-for( let i = 0; i < scores.length; i++) {
-  for( let j = 0; j < scores[i].length; j++) {
-    console.log(scores[i][j]);
+let num = 3;
+  console.log(num);
+  switch (num) {
+  case 1:
+    console.log('大吉');
+  case 2:
+    console.log('中吉');
+  case 3:
+    console.log('小吉');
+  case 4:
+    console.log('吉');
+  case 5:
+    console.log('凶');
+  case 6:
+    console.log('想定外');
   }
-}
+  
+// let num = 1;
+// switch(num) {
+//   case 1:
+//     console.log('金賞');
+//     break;
+//   case 2:
+//   console.log('銀賞');
+//   break;
+//   case 3:
+//   break;
+//   console.log('銅賞');
+// }
+
+
+// const scores = [
+//   [100,99,98],
+//   [90,89,88],
+//   [80,79,78]
+// ];
+
+// console.log(scores[0][0]);
+// console.log(scores[0][1]);
+// console.log(scores[0][2]);
+// console.log(scores[1][0]);
+// console.log(scores[1][1]);
+// console.log(scores[1][2]);
+// console.log(scores[2][0]);
+// console.log(scores[2][1]);
+// console.log(scores[2][2]);
+
+// for( let i = 0; i < scores.length; i++) {
+//   for( let j = 0; j < scores[i].length; j++) {
+//     console.log(scores[i][j]);
+//   }
+// }
 
 // function getrectangle(height, width) {
 //   return height * width;
