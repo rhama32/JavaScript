@@ -1,28 +1,55 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let ans1 = x + y * z;
-console.log(ans1);
+let obj1 = { a:1, b:2, c:3 }
+let obj2 = { a:4, b:5, c:6 }
+let mergedObj = Object.assign(obj1,obj2);
+console.log(mergedObj);
 
-let ans2 = (x + y) * z;
-console.log(ans2);
+//空のオブジェクト
+let person = {};
+console.log(person);
 
-let ans = 1 + 2;
-console.log(ans);
+let colors = ['Red', 'Green', 'Blue'];
+console.log(colors);
 
-let i = 20;
-let j = 10;
-let ans1 = i + j;
-console.log(ans1);
+//末尾追加
+colors.push('Black');
+console.log(colors);
 
-let ans2 = i - j;
-console.log(ans2);
+colors.unshift('white');
+console.log(colors);
 
-let ans3 = i * j;
-console.log(ans3);
+colors[1] = 'Aka';
+console.log(colors);
 
-let ans4 = i / j;
-console.log(ans4);
+let insertArr = ['a', 'b', 'c'];
+insertArr.splice(1,0,'D');
+console.log(insertArr);
+
+
+// let ans1 = x + y * z;
+// console.log(ans1);
+
+// let ans2 = (x + y) * z;
+// console.log(ans2);
+
+// let ans = 1 + 2;
+// console.log(ans);
+
+// let i = 20;
+// let j = 10;
+// let ans1 = i + j;
+// console.log(ans1);
+
+// let ans2 = i - j;
+// console.log(ans2);
+
+// let ans3 = i * j;
+// console.log(ans3);
+
+// let ans4 = i / j;
+// console.log(ans4);
 
 
 // if (条件式) {
