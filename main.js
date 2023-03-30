@@ -1,38 +1,49 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let user = new Object();
-user.name = 'Mike';
-user.gender = 'man';
-user.birthYear = 1990;
-console.log(user);
 
-//オブジェクト初期化子
-let user = {name: 'Mike',
-  gender: 'man', birthYear: 1990};
-console.log(user);
+let user = {
+  name: 'Mike',
+  gender: 'man',
+  birthYear:1990,
+  calcAge:function(thisYear) {
+    return thisYear - this.birthYear;
+  }
+}
+console.log(user.calcAge(2021));
 
-//ドット記法
-console.log(user.name);
+// let user = new Object();
+// user.name = 'Mike';
+// user.gender = 'man';
+// user.birthYear = 1990;
+// console.log(user);
 
-// ブラケット記法
-console.log(user['name']);
+// //オブジェクト初期化子
+// let user = {name: 'Mike',
+//   gender: 'man', birthYear: 1990};
+// console.log(user);
 
-//個数
-console.log(Object.keys(user).length);
+// //ドット記法
+// console.log(user.name);
 
-let keys = Object.keys(user);
-console.log(keys);
+// // ブラケット記法
+// console.log(user['name']);
 
-user.prefecture = 'Hyogo';
-user ['prefecture'] = 'Hyogo';
-console.log(user);
+// //個数
+// console.log(Object.keys(user).length);
 
-//結合
-let obj1 = { a:1,b:2,c:3}
-let obj2 = { d:4,e:5,f:6}
-let mergedObj = Object.assign(obj1,obj2);
-console.log(mergedObj);
+// let keys = Object.keys(user);
+// console.log(keys);
+
+// user.prefecture = 'Hyogo';
+// user ['prefecture'] = 'Hyogo';
+// console.log(user);
+
+// //結合
+// let obj1 = { a:1,b:2,c:3}
+// let obj2 = { d:4,e:5,f:6}
+// let mergedObj = Object.assign(obj1,obj2);
+// console.log(mergedObj);
 
 // let colors = ['Red', 'Green', 'Blue'];
 // console.log(colors);
