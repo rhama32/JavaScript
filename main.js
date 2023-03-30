@@ -1,19 +1,48 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+
 let colors = ['Red', 'Green', 'Blue'];
 console.log(colors);
-console.log(colors[0]);
-console.log(colors[1]);
-console.log(colors[2]);
 
-let arr = [1,'2',3,['a','b','c']];
-console.log(arr);
+colors.push('Black');
+console.log(colors);
 
-console.log(colors[colors.length -1]);
+colors.unshift('white');
+console.log(colors);
 
-let emptyArr = [];
-console.log(emptyArr);
+colors[1] = 'Aka';
+console.log(colors);
+
+let insertArr = ['a','b','c'];
+insertArr.splice(1,0,'D');
+console.log(insertArr);
+
+let arr1 = ['a','b','c'];
+let arr2 = ['d','e','f'];
+let mergedArr = arr1.concat(arr2);
+console.log(mergedArr);
+console.log(arr1);
+console.log(arr2);
+
+let arr3 = ['a','b','c','d'];
+arr2.shift();
+console.log(arr3);
+
+
+// let colors = ['Red', 'Green', 'Blue'];
+// console.log(colors);
+// console.log(colors[0]);
+// console.log(colors[1]);
+// console.log(colors[2]);
+
+// let arr = [1,'2',3,['a','b','c']];
+// console.log(arr);
+
+// console.log(colors[colors.length -1]);
+
+// let emptyArr = [];
+// console.log(emptyArr);
 
 
   // //説明の初期値を設定
