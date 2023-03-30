@@ -1,33 +1,65 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+let user = new Object();
+user.name = 'Mike';
+user.gender = 'man';
+user.birthYear = 1990;
+console.log(user);
 
-let colors = ['Red', 'Green', 'Blue'];
-console.log(colors);
+//オブジェクト初期化子
+let user = {name: 'Mike',
+  gender: 'man', birthYear: 1990};
+console.log(user);
 
-colors.push('Black');
-console.log(colors);
+//ドット記法
+console.log(user.name);
 
-colors.unshift('white');
-console.log(colors);
+// ブラケット記法
+console.log(user['name']);
 
-colors[1] = 'Aka';
-console.log(colors);
+//個数
+console.log(Object.keys(user).length);
 
-let insertArr = ['a','b','c'];
-insertArr.splice(1,0,'D');
-console.log(insertArr);
+let keys = Object.keys(user);
+console.log(keys);
 
-let arr1 = ['a','b','c'];
-let arr2 = ['d','e','f'];
-let mergedArr = arr1.concat(arr2);
-console.log(mergedArr);
-console.log(arr1);
-console.log(arr2);
+user.prefecture = 'Hyogo';
+user ['prefecture'] = 'Hyogo';
+console.log(user);
 
-let arr3 = ['a','b','c','d'];
-arr2.shift();
-console.log(arr3);
+//結合
+let obj1 = { a:1,b:2,c:3}
+let obj2 = { d:4,e:5,f:6}
+let mergedObj = Object.assign(obj1,obj2);
+console.log(mergedObj);
+
+// let colors = ['Red', 'Green', 'Blue'];
+// console.log(colors);
+
+// colors.push('Black');
+// console.log(colors);
+
+// colors.unshift('white');
+// console.log(colors);
+
+// colors[1] = 'Aka';
+// console.log(colors);
+
+// let insertArr = ['a','b','c'];
+// insertArr.splice(1,0,'D');
+// console.log(insertArr);
+
+// let arr1 = ['a','b','c'];
+// let arr2 = ['d','e','f'];
+// let mergedArr = arr1.concat(arr2);
+// console.log(mergedArr);
+// console.log(arr1);
+// console.log(arr2);
+
+// let arr3 = ['a','b','c','d'];
+// arr2.shift();
+// console.log(arr3);
 
 
 // let colors = ['Red', 'Green', 'Blue'];
