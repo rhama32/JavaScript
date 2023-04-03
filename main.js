@@ -1,6 +1,34 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+let birthyear = '2000';
+let age = '18';
+console.log(birthyear + age);
+console.log(age+birthyear)
+console.log(Number(birthyear) + age);
+console.log(Number('Mike'));
+console.log(age + '歳');
+console.log(String(age) + '歳');
+
+//　'文字列'+ 数値　＝ '文字列'
+//　数値 + '文字列'　＝　'文字列'
+//　数値 + 数値　＝　数値
+//　'文字列'+ '文字列'　= '文字列'
+
+
+
+let x = 81;
+if (x>=90){
+  console.log('A');
+} else if(x>=80) {
+  console.log('B');
+} else if(x>=60) {
+  console.log('C');
+} else {
+  console.log('D');
+} ]
+
+
 // let age = 25;
 // let beverage = (age >= 20)? 'ビール' : 'コーラ';
 // console.log(beverage);
