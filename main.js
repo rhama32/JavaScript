@@ -1,6 +1,17 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+let scores = [100, 90, 80, 70, 60];
+let sum = 0;
+
+for(let i = 0; i < scores.length; i++) {
+  sum += scores[i];
+}
+
+let average = sum/ scores.length;
+console.log('合計値'  + sum);
+console.log('平均値' + average);
+
 
 // //for Each
 // let colors = ['Red', 'Green', 'Blue'];
