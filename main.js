@@ -2,20 +2,38 @@
 'use strict';
 
 
-let i = 0;
-while(i <= 3) {
-  console.log(i);
-  i++;
-}
+// //for Each
+// let colors = ['Red', 'Green', 'Blue'];
+// // for(let i = 0; i < colors.length; i++) {
+// //   console.log(colors[i]); 
+// // }
 
-let j = 0;
-while(j <= 10) {
-  console.log(j);
-  if(j === 5) {
-    break;
-  }
-  j++
-}
+// colors.forEach(function(color) {
+//   console.log(color);
+// });
+
+// // do while
+// let i = 1;
+// do {
+//   console.log(i);
+//   i++;
+// } while (i <= 3);
+
+
+// let i = 0;
+// while(i <= 3) {
+//   console.log(i);
+//   i++;
+// }
+
+// let j = 0;
+// while(j <= 10) {
+//   console.log(j);
+//   if(j === 5) {
+//     break;
+//   }
+//   j++
+// }
 
 // for (let i= 1; i <= 3; i++) {
 //   console.log(i);
