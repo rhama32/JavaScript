@@ -1,15 +1,17 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+
 let btn = document.getElementById('triggerButton');
 btn.addEventListener('click', function(e) {
   //alert('clicked!');
   //IDによる要素ノードの取得
   let headerTitle = document.getElementById('headerTitle');
   //let headerTitle = document.getElementById('hoge');
+  headerTitle.textContent = 'タイトルが変更されました'
   console.log(headerTitle);
   //コンテンツの取得
-  console.log(headerTitle.textContent)
+  //console.log(headerTitle.textContent)
 }, false);
 
 // let scores = [100, 90, 80, 70, 60];
