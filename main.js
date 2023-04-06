@@ -1,16 +1,27 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let scores = [100, 90, 80, 70, 60];
-let sum = 0;
+let btn = document.getElementById('triggerButton');
+btn.addEventListener('click', function(e) {
+  //alert('clicked!');
+  //IDによる要素ノードの取得
+  let headerTitle = document.getElementById('headerTitle');
+  //let headerTitle = document.getElementById('hoge');
+  console.log(headerTitle);
+  //コンテンツの取得
+  console.log(headerTitle.textContent)
+}, false);
 
-for(let i = 0; i < scores.length; i++) {
-  sum += scores[i];
-}
+// let scores = [100, 90, 80, 70, 60];
+// let sum = 0;
 
-let average = sum/ scores.length;
-console.log('合計値'  + sum);
-console.log('平均値' + average);
+// for(let i = 0; i < scores.length; i++) {
+//   sum += scores[i];
+// }
+
+// let average = sum/ scores.length;
+// console.log('合計値'  + sum);
+// console.log('平均値' + average);
 
 
 // //for Each
