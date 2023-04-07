@@ -6,10 +6,16 @@ let btn = document.getElementById('triggerButton');
 btn.addEventListener('click', function(e) {
   //alert('clicked!');
   //IDによる要素ノードの取得
-  let headerTitle = document.getElementById('headerTitle');
+  let inputColorName = document.getElementById('inputColorName');
   //let headerTitle = document.getElementById('hoge');
-  headerTitle.textContent = 'タイトルが変更されました'
-  console.log(headerTitle);
+  //input要素の入力値を取得
+  let colorNameText = inputColorName.value;
+  //取得したinput要素のname属性値を取得
+  let inputName = inputColorName.getAttribute('name');
+  //idがshowTextのp要素を取得
+  let showText = document.getElementById('showText');
+  
+  showText.textContent = `name属性: ${inputName},入力されたテキスト: ${colorNameText}`;
   //コンテンツの取得
   //console.log(headerTitle.textContent)
 }, false);
