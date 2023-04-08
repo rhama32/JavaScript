@@ -1,6 +1,27 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+//class属性を追加更新(赤)
+let setRedClassButton = document.getElementById('setRedClassButton');
+setRedClassButton.addEventListener('click', function(e) {
+  let showText = document.getElementById('showText');
+  showText.setAttribute('class','red');
+}, false);
+
+let setBlueClassButton = document.getElementById('setBlueClassButton');
+setBlueClassButton.addEventListener('click', function(e) {
+  let showText = document.getElementById('showText');
+  showText.setAttribute('class','blue');
+}, false);
+
+let removeClassButton = document.getElementById('removeClassButton');
+removeClassButton.addEventListener('click', function(e) {
+  let showText = document.getElementById('showText');
+  showText.setAttribute('class','remove');
+}, false);
+
+
+
 // let scores = [100, 90, 80, 70, 60];
 // let sum = 0;
 
@@ -30,23 +51,23 @@
 //   i++;
 // } while (i <= 3);
 
-let btn = document.getElementById('triggerButton');
-btn.addEventListener('click', function(e) {
-  //alert('clicked!');
-  //IDによる要素ノードの取得
-  let inputColorName = document.getElementById('inputColorName');
-  //let headerTitle = document.getElementById('hoge');
-  //input要素の入力値を取得
-  let colorNameText = inputColorName.value;
-  //取得したinput要素のname属性値を取得
-  let inputName = inputColorName.getAttribute('name');
-  //idがshowTextのp要素を取得
-  let showText = document.getElementById('showText');
+// let btn = document.getElementById('triggerButton');
+// btn.addEventListener('click', function(e) {
+//   //alert('clicked!');
+//   //IDによる要素ノードの取得
+//   let inputColorName = document.getElementById('inputColorName');
+//   //let headerTitle = document.getElementById('hoge');
+//   //input要素の入力値を取得
+//   let colorNameText = inputColorName.value;
+//   //取得したinput要素のname属性値を取得
+//   let inputName = inputColorName.getAttribute('name');
+//   //idがshowTextのp要素を取得
+//   let showText = document.getElementById('showText');
   
-  showText.textContent = `name属性: ${inputName},入力されたテキスト: ${colorNameText}`;
-  //コンテンツの取得
-  //console.log(headerTitle.textContent)
-}, false);
+//   showText.textContent = `name属性: ${inputName},入力されたテキスト: ${colorNameText}`;
+//   //コンテンツの取得
+//   //console.log(headerTitle.textContent)
+// }, false);
 
 // let scores = [100, 90, 80, 70, 60];
 // let sum = 0;
