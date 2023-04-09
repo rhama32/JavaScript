@@ -1,24 +1,24 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-//class属性を追加更新(赤)
-let setRedClassButton = document.getElementById('setRedClassButton');
-setRedClassButton.addEventListener('click', function(e) {
-  let showText = document.getElementById('showText');
-  showText.setAttribute('class','red');
-}, false);
+// //class属性を追加更新(赤)
+// let setRedClassButton = document.getElementById('setRedClassButton');
+// setRedClassButton.addEventListener('click', function(e) {
+//   let showText = document.getElementById('showText');
+//   showText.setAttribute('class','red');
+// }, false);
 
-let setBlueClassButton = document.getElementById('setBlueClassButton');
-setBlueClassButton.addEventListener('click', function(e) {
-  let showText = document.getElementById('showText');
-  showText.setAttribute('class','blue');
-}, false);
+// let setBlueClassButton = document.getElementById('setBlueClassButton');
+// setBlueClassButton.addEventListener('click', function(e) {
+//   let showText = document.getElementById('showText');
+//   showText.setAttribute('class','blue');
+// }, false);
 
-let removeClassButton = document.getElementById('removeClassButton');
-removeClassButton.addEventListener('click', function(e) {
-  let showText = document.getElementById('showText');
-  showText.setAttribute('class','remove');
-}, false);
+// let removeClassButton = document.getElementById('removeClassButton');
+// removeClassButton.addEventListener('click', function(e) {
+//   let showText = document.getElementById('showText');
+//   showText.setAttribute('class');
+// }, false);
 
 
 
