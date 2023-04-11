@@ -3,9 +3,11 @@
 
 let btn = document.getElementById('triggerButton');
 btn.addEventListener('click',function(e) {
-  let elements = document.getElementsByName('inputText');
-  console.log(elements);
-  console.log(elements[0].value);
+ let elements = document.getElementsByClassName('foo');
+ console.log(elements);
+ for(let i = 0; i< elements.length; i++) {
+ console.log(elements[i].textContent);
+  }
 }, false);
 
 // //class属性を追加更新(赤)
