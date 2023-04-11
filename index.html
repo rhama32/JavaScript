@@ -6,19 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="img/favicon.ico" rel="icon">
-  <title>クラス名で要素を取得</title>
+  <title>学習したい言語</title>
 </head>
 <body>
-    <ul>
-      <li class="foo">要素1</li>
-      <li class="bar">要素2</li>
-      <li class="foo">要素3</li>
-      <li>要素4</li>
-      <li class="bar">要素5</li>
-    </ul>
-      
-    </ul>
-    <button id="triggerButton" type="button">実行</button>
+    <ul id="languageList"></ul>
+      <label for="inputLanguage">学習したい言語</label>
+      <input type="text" id="inputLanguage" name="inputLanguage">
+    
+    <button id="addButton">追加</button>
+    <button id="removeButton">削除</button>
     <script src="main.js">
     </script>
 </body>
