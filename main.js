@@ -1,6 +1,34 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+
+  //説明の初期値を設定
+  let description = document.createElement('p');
+  description.textContent = image.alt;
+  
+  //作成した要素の表示
+  let mainImage = document.getElementById('main_image');
+  mainImage.insertBefore(image, null);
+  mainImage.insertBefore(description, null);
+  
+  //サムネイルの表示
+  let thumbnails = document.getElementById('thumbnails');
+  for(let i = 0; i < images.length; i++) {
+    let thumbnailImage = document.createElement('img');  
+    thumbnailImage.setAttribute('src', images[i].src);
+    thumbnailImage.setAttribute('alt', images[i].description);
+    thumbnails.insertBefore(thumbnailImage, null);
+  }
+  
+  //クリックしたサムネイルの表示
+  thumbnails.addEventListener('click', function(e) {
+    if(e.target.src) {
+      // console.log(e.target);
+    image.src = e.target.src;
+    description.textContent = e.target.alt;
+    }
+  }, false);
+
 // window.console.log('hello');
 
 // console.log('hello');
@@ -12,53 +40,53 @@
 //window.open('https://google.co.jp');
 
 //スクロール
-let btn = document.getElementById('triggerButton');
-btn.addEventListener('click', function(e) {
-  window.scroll(0,300);
-},false);
+// let btn = document.getElementById('triggerButton');
+// btn.addEventListener('click', function(e) {
+//   window.scroll(0,300);
+// },false);
 
-let addButton = document.getElementById('addButton');
-addButton.addEventListener('click', function(e) {
-  //入力欄のinput要素を取得
-  let inputLanguage = document.getElementById('inputLanguage');
-  //input要素から文字列を取得
-  let language = inputLanguage.value;
-  if(language === ''){
-    alert('未入力です');
-    return;
-  }
-  //li要素を生成
-  let listItem = document.createElement('li');
-  //li要素のコンテンツに入力された文字列を設定
-  listItem.textContent = language;
-  //ul要素を取得
-  let languageList = document.getElementById('languageList');
-  //listの末尾に生成した要素を追加
-  languageList.appendChild(listItem);
-  //入力欄をクリア
-  inputLanguage.value =''; 
-}, false);
+// let addButton = document.getElementById('addButton');
+// addButton.addEventListener('click', function(e) {
+//   //入力欄のinput要素を取得
+//   let inputLanguage = document.getElementById('inputLanguage');
+//   //input要素から文字列を取得
+//   let language = inputLanguage.value;
+//   if(language === ''){
+//     alert('未入力です');
+//     return;
+//   }
+//   //li要素を生成
+//   let listItem = document.createElement('li');
+//   //li要素のコンテンツに入力された文字列を設定
+//   listItem.textContent = language;
+//   //ul要素を取得
+//   let languageList = document.getElementById('languageList');
+//   //listの末尾に生成した要素を追加
+//   languageList.appendChild(listItem);
+//   //入力欄をクリア
+//   inputLanguage.value =''; 
+// }, false);
 
-//削除
-let removeButton = document.getElementById('removeButton');
-removeButton.addEventListener('click', function(e) {
-  let languageList = document.getElementById('languageList');
-  languageList.removeChild(languageList.lastElementChild);
-}, false);
+// //削除
+// let removeButton = document.getElementById('removeButton');
+// removeButton.addEventListener('click', function(e) {
+//   let languageList = document.getElementById('languageList');
+//   languageList.removeChild(languageList.lastElementChild);
+// }, false);
 
 
-//class属性を追加更新(赤)
-let setRedClassButton = document.getElementById('setRedClassButton');
-setRedClassButton.addEventListener('click', function(e) {
-  let showText = document.getElementById('showText');
-  showText.setAttribute('class','red');
-}, false);
+// //class属性を追加更新(赤)
+// let setRedClassButton = document.getElementById('setRedClassButton');
+// setRedClassButton.addEventListener('click', function(e) {
+//   let showText = document.getElementById('showText');
+//   showText.setAttribute('class','red');
+// }, false);
 
-let setBlueClassButton = document.getElementById('setBlueClassButton');
-setBlueClassButton.addEventListener('click', function(e) {
-  let showText = document.getElementById('showText');
-  showText.setAttribute('class','blue');
-}, false);
+// let setBlueClassButton = document.getElementById('setBlueClassButton');
+// setBlueClassButton.addEventListener('click', function(e) {
+//   let showText = document.getElementById('showText');
+//   showText.setAttribute('class','blue');
+// }, false);
 
 // let removeClassButton = document.getElementById('removeClassButton');
 // removeClassButton.addEventListener('click', function(e) {
