@@ -1,16 +1,16 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-console.log('Hello! I\'m Mike.Array');
-console.log('\¥\t AAA \n BBB');
-console.log("Hello I'm Mike Array");
-console.log('こんにちは"マイクさん"');
-console.log('Hello'); // 同一プロジェクトでは統一
-console.log("Hello"); // 同一プロジェクトでは統一 
+// console.log('Hello! I\'m Mike.Array');
+// console.log('\¥\t AAA \n BBB');
+// console.log("Hello I'm Mike Array");
+// console.log('こんにちは"マイクさん"');
+// console.log('Hello'); // 同一プロジェクトでは統一
+// console.log("Hello"); // 同一プロジェクトでは統一 
 
-console.log(12345); //数値リテラル
-console.log(12345.6789); //浮動小数点リテラル
-console.log('12345')　//文字列リテラル 
+// console.log(12345); //数値リテラル
+// console.log(12345.6789); //浮動小数点リテラル
+// console.log('12345')　//文字列リテラル 
 
 // console.log('Hello World!!!')
 // console.log('Hello World!!!')
