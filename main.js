@@ -1,27 +1,54 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let num = Math.floor(Math.random() * 5 + 1);
-switch (num) {
-  case 1:
-    console.log('大吉');
-    break;
-  case 2:
-    console.log('中吉');
-    break;
-  case 3:
-    console.log('小吉');
-    break;
-  case 4:
-    console.log('吉');
-    break;
-  case 5:
-    console.log('凶');
-    break;
-  default :
-    console.log('想定外');
-    break;
-}
+  //説明の初期値を設定
+  let description = document.createElement('p');
+  description.textContent = image.alt;
+  
+  //作成した要素の表示
+  let mainImage = document.getElementById('main_image');
+  mainImage.insertBefore(image, null);
+  mainImage.insertBefore(description, null);
+  
+  //サムネイルの表示
+  let thumbnails = document.getElementById('thumbnails');
+  for(let i = 0; i < images.length; i++) {
+    let thumbnailImage = document.createElement('img');  
+    thumbnailImage.setAttribute('src', images[i].src);
+    thumbnailImage.setAttribute('alt', images[i].description);
+    thumbnails.insertBefore(thumbnailImage, null);
+  }
+  
+  //クリックしたサムネイルの表示
+  thumbnails.addEventListener('click', function(e) {
+    if(e.target.src) {
+      // console.log(e.target);
+    image.src = e.target.src;
+    description.textContent = e.target.alt;
+    }
+  }, false);
+  
+// let num = Math.floor(Math.random() * 5 + 1);
+// switch (num) {
+//   case 1:
+//     console.log('大吉');
+//     break;
+//   case 2:
+//     console.log('中吉');
+//     break;
+//   case 3:
+//     console.log('小吉');
+//     break;
+//   case 4:
+//     console.log('吉');
+//     break;
+//   case 5:
+//     console.log('凶');
+//     break;
+//   default :
+//     console.log('想定外');
+//     break;
+// }
 
 // console.log('Hello! I\'m Mike.Array');
 // console.log('\¥\t AAA \n BBB');
@@ -2086,7 +2113,7 @@ switch (num) {
 // var myName = 'Mike';
 // console.log(myName);
 
-// // 定数 = 値を変更出来ない
+// // 定数 = 値��変更出来ない
 // const PI = 3.14;
 // console.log(PI);
 // // PI = 3.1; NG
