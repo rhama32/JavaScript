@@ -1,32 +1,59 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-let colors = ['Red', 'Green', 'Blue'];
-console.log(colors);
 
-colors.push('Black');
-console.log(colors);
+//アロー関数
+(引数,・・・) => {
+  //実行する処理
+}
 
-colors.unshift('white');
-console.log(colors);
+const getRectangle = (height, width) => {
+  return height * width;
+};
+console.log(getRectangle(3,5));
 
-colors[1] = 'Aka';
-console.log(colors);
 
-let insertArr = ['a','b','c'];
-insertArr.splice(1,0,'D');
-console.log(insertArr);
+//functionコンストラクター
+new Function('引数1','引数2','関数本体の処理');
+//シングルコートで囲う。
+const getRectangle
+= new Function('height', 'width', 'return height * width');
 
-let arr1 = ['a','b','c'];
-let arr2 = ['d','e','f'];
-let mergedArr = arr1.concat(arr2);
-console.log(mergedArr);
-console.log(arr1);
-console.log(arr2);
+console.log(getRectangle(3,5));
 
-let arr3 = ['a','b','c','d'];
-arr2.shift();
-console.log(arr3);
+
+// //関数リテラル
+// function(引数1,引数2) {
+// //実行する処理;
+// }
+
+
+// let colors = ['Red', 'Green', 'Blue'];
+// console.log(colors);
+
+// colors.push('Black');
+// console.log(colors);
+
+// colors.unshift('white');
+// console.log(colors);
+
+// colors[1] = 'Aka';
+// console.log(colors);
+
+// let insertArr = ['a','b','c'];
+// insertArr.splice(1,0,'D');
+// console.log(insertArr);
+
+// let arr1 = ['a','b','c'];
+// let arr2 = ['d','e','f'];
+// let mergedArr = arr1.concat(arr2);
+// console.log(mergedArr);
+// console.log(arr1);
+// console.log(arr2);
+
+// let arr3 = ['a','b','c','d'];
+// arr2.shift();
+// console.log(arr3);
 
 
 // //オブジェクト初期化子
