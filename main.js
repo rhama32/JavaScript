@@ -2,30 +2,30 @@
 'use strict';
 
 
-//アロー関数
-(引数,・・・) => {
-  //実行する処理
-}
-
-const getRectangle = (height, width) => {
-  return height * width;
-};
-console.log(getRectangle(3,5));
-
-
-//functionコンストラクター
-new Function('引数1','引数2','関数本体の処理');
-//シングルコートで囲う。
-const getRectangle
-= new Function('height', 'width', 'return height * width');
-
-console.log(getRectangle(3,5));
-
-
-// //関数リテラル
-// function(引数1,引数2) {
-// //実行する処理;
+// //アロー関数
+// (引数,・・・) => {
+//   //実行する処理
 // }
+
+// const getRectangle = (height, width) => {
+//   return height * width;
+// };
+// console.log(getRectangle(3,5));
+
+
+// //functionコンストラクター
+// new Function('引数1','引数2','関数本体の処理');
+// //シングルコートで囲う。
+// const getRectangle
+// = new Function('height', 'width', 'return height * width');
+
+// console.log(getRectangle(3,5));
+
+
+// // //関数リテラル
+// // function(引数1,引数2) {
+// // //実行する処理;
+// // }
 
 
 // let colors = ['Red', 'Green', 'Blue'];
