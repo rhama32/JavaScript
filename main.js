@@ -1,35 +1,35 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
-console.log('Hello World!!!')
-console.log('Hello World!!!')
-console.log('Hello World!!!') 
-  //説明の初期値を設定
-  let description = document.createElement('p');
-  description.textContent = image.alt;
+// console.log('Hello World!!!')
+// console.log('Hello World!!!')
+// console.log('Hello World!!!') 
+//   //説明の初期値を設定
+//   let description = document.createElement('p');
+//   description.textContent = image.alt;
   
-  //作成した要素の表示
-  let mainImage = document.getElementById('main_image');
-  mainImage.insertBefore(image, null);
-  mainImage.insertBefore(description, null);
+//   //作成した要素の表示
+//   let mainImage = document.getElementById('main_image');
+//   mainImage.insertBefore(image, null);
+//   mainImage.insertBefore(description, null);
   
-  //サムネイルの表示
-  let thumbnails = document.getElementById('thumbnails');
-  for(let i = 0; i < images.length; i++) {
-    let thumbnailImage = document.createElement('img');  
-    thumbnailImage.setAttribute('src', images[i].src);
-    thumbnailImage.setAttribute('alt', images[i].description);
-    thumbnails.insertBefore(thumbnailImage, null);
-  }
+//   //サムネイルの表示
+//   let thumbnails = document.getElementById('thumbnails');
+//   for(let i = 0; i < images.length; i++) {
+//     let thumbnailImage = document.createElement('img');  
+//     thumbnailImage.setAttribute('src', images[i].src);
+//     thumbnailImage.setAttribute('alt', images[i].description);
+//     thumbnails.insertBefore(thumbnailImage, null);
+//   }
   
-  //クリックしたサムネイルの表示
-  thumbnails.addEventListener('click', function(e) {
-    if(e.target.src) {
-      // console.log(e.target);
-    image.src = e.target.src;
-    description.textContent = e.target.alt;
-    }
-  }, false);
+//   //クリックしたサムネイルの表示
+//   thumbnails.addEventListener('click', function(e) {
+//     if(e.target.src) {
+//       // console.log(e.target);
+//     image.src = e.target.src;
+//     description.textContent = e.target.alt;
+//     }
+//   }, false);
 
 
 
