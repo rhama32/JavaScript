@@ -1,6 +1,32 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+
+//   //ul要素を取得
+//   let languageList = document.getElementById('languageList');
+//   //listの末尾に生成した要素を追加
+//   languageList.appendChild(listItem);
+//   //入力欄をクリア
+//   inputLanguage.value =''; 
+// }, false);
+// //削除
+// let removeButton = document.getElementById('removeButton');
+// removeButton.addEventListener('click', function(e) {
+//   let languageList = document.getElementById('languageList');
+//   languageList.removeChild(languageList.lastElementChild);
+// }, false);
+// //class属性を追加更新(赤)
+// let setRedClassButton = document.getElementById('setRedClassButton');
+// setRedClassButton.addEventListener('click', function(e) {
+//   let showText = document.getElementById('showText');
+//   showText.setAttribute('class','red');
+// }, false);
+// let setBlueClassButton = document.getElementById('setBlueClassButton');
+// setBlueClassButton.addEventListener('click', function(e) {
+//   let showText = document.getElementById('showText');
+//   showText.setAttribute('class','blue');
+// }, false);
+
 // console.log('Hello World!!!')
 // console.log('Hello World!!!')
 // console.log('Hello World!!!') 
