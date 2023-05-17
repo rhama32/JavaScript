@@ -1,6 +1,61 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+
+// let num = Math.floor(Math.random() * 5 + 1);
+// switch (num) {
+//   case 1:
+//     console.log('大吉');
+//     break;
+//   case 2:
+//     console.log('中吉');
+//     break;
+//   case 3:
+//     console.log('小吉');
+//     break;
+//   case 4:
+//     console.log('吉');
+//     break;
+//   case 5:
+//     console.log('凶');
+//     break;
+//   default :
+//     console.log('想定外');
+//     break;
+// }
+// let num = 3;
+// switch(num) {
+//   case 1:
+//     console.log('金');
+//     break;
+//   case 2:
+//     console.log('銀');
+//     break;
+//   case 3:
+//   console.log('銅');
+//   break;
+//   case 4:
+//   console.log('4');
+//   break;
+// }
+// let num = 4;
+// if (num === 1) {
+//   console.log('金');
+// } else if(num === 2) {
+// console.log('銀');
+// } else if(num === 3) {
+// console.log('銅');
+// } else {
+//   console.log('残念');
+// }
+// let num = 11;
+// if(num % 2 === 0) {
+//   if(num % 3 === 0) {
+//     console.log('${num}は２の倍数かつ３の倍数です')
+//   }
+// }
+
+
 // let emptyArr = [];
 // console.log(emptyArr);
   // //説明の初期値を設定
