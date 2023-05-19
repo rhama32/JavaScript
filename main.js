@@ -1,6 +1,51 @@
 //strictモードで実行。厳密にエラーを検証。
 'use strict';
 
+// //オブジェクト初期化子
+// let user = {name: 'Mike',
+//   gender: 'man', birthYear: 1990};
+// console.log(user);
+// //ドット記法
+// console.log(user.name);
+// // ブラケット記法
+// console.log(user['name']);
+// //個数
+// console.log(Object.keys(user).length);
+// let keys = Object.keys(user);
+// console.log(keys);
+// user.prefecture = 'Hyogo';
+// user ['prefecture'] = 'Hyogo';
+// console.log(user);
+// //結合
+// let obj1 = { a:1,b:2,c:3}
+// let obj2 = { d:4,e:5,f:6}
+// let mergedObj = Object.assign(obj1,obj2);
+// console.log(mergedObj);
+// let colors = ['Red', 'Green', 'Blue'];
+// console.log(colors);
+// colors.push('Black');
+// console.log(colors);
+// colors.unshift('white');
+// console.log(colors);
+// colors[1] = 'Aka';
+// console.log(colors);
+// let insertArr = ['a','b','c'];
+// insertArr.splice(1,0,'D');
+// console.log(insertArr);
+// let arr1 = ['a','b','c'];
+// let arr2 = ['d','e','f'];
+// let mergedArr = arr1.concat(arr2);
+// console.log(mergedArr);
+// console.log(arr1);
+// console.log(arr2);
+// let arr3 = ['a','b','c','d'];
+// arr2.shift();
+// console.log(arr3);
+// let colors = ['Red', 'Green', 'Blue'];
+// console.log(colors);
+// console.log(colors[0]);
+// console.log(colors[1]);
+// console.log(colors[2]);
 
 // let num = Math.floor(Math.random() * 5 + 1);
 // switch (num) {
